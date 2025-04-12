@@ -6,7 +6,7 @@ const contactSection = document.getElementById('contact');
 
 let portfolioIsVisible = true;
 let aboutIsVisible = true;
-let contactIsVisible = true;
+let contactIsVisible = false;
 
 
 // toggle functions
@@ -41,4 +41,3 @@ const cToggle = () => {
     };
 };
 
-export default { pToggle, aToggle, cToggle };

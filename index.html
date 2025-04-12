@@ -14,286 +14,200 @@
 
 <!-- main -->
 
-    <main>        
+    <main> 
+        
+        <!-- hero section -->
      
         <div class="hero flex-container flex-column">
-            <div>
-                <p class="animation-floatUp">Web Developer, Musician, Creative Thinker</p>
+
+            <div class="titles animation-floatUp">
+                <p>Web Developer, Musician, Creative Thinker</p>
             </div>
 
-            <div>
-                <h1 class="animation-fadeIn">G-Mach</h1>
+            <div class="name animation-fadeIn">
+                <h1>G-Mach</h1>
             </div>
 
-            <div>
-                
+            <div id="contact">
+                <h2>Contact</h2>
+                <div class="flex-container space-between">
+
+                    <div class="email">
+                        <span>garyjyam@gmail.com</span>
+                    </div>
+
+                    <div class="social flex-container">
+                        <ul>
+                            <li><a href="">Github</a></li>
+                            <li><a href="">Linkedin</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="cta-buttons flex-container gap animation-bounceIn">
+            <div class="cta-buttons flex-container animation-bounceIn">
                 <button onclick="pToggle()">Portfolio</button>
                 <button onclick="aToggle()">About</button>
-                <button onclick="cToggle">Contact</button>
+                <button onclick="cToggle()">Contact</button>
             </div>
+
         </div>
 
-        <div id="portfolio">
-            <div class="flex-container overflow gap">
+        <!-- portfolio section -->
 
-                <div class="project-card">
-                    <h2>Club</h2>
-                    <div class="flex-container gap">
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ClubDesktopPic1.png" alt="">
-                                </div>
+        <div id="portfolio" class="flex-container gap overflow">
 
-                                <div>
-                                    <img src="PortfolioPics/ClubMobilePic1.png" alt="">
-                                </div>
-                            </div>
+            <div class="project-card">
+                <h2>Club</h2>
+                <div class="flex-container gap">
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ClubDesktopPic1.png" alt="">
                         </div>
 
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ClubDesktopPic2.png" alt="">
-                                </div>
+                        <div>
+                            <img src="PortfolioPics/ClubMobilePic1.png" alt="">
+                        </div>
+                    </div>
 
-                                <div>
-                                    <img src="PortfolioPics/ClubMobilePic2.png" alt="">
-                                </div>
-                            </div>
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ClubDesktopPic2.png" alt="">
                         </div>
 
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ClubDesktopPic3.png" alt="">
-                                </div>
+                        <div>
+                            <img src="PortfolioPics/ClubMobilePic2.png" alt="">
+                        </div>
+                    </div>
 
-                                <div>
-                                    <img src="PortfolioPics/ClubMobilePic3.png" alt="">
-                                </div>
-                            </div>
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ClubDesktopPic3.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/ClubMobilePic3.png" alt="">
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <h2>Company</h2>
-                    <div class="flex-container gap">
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/CompanyDesktopPic1.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/CompanyMobilePic1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/CompanyDesktopPic2.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/CompanyMobilePic2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/CompanyDesktopPic3.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/CompanyMobilePic3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h2>Colmar</h2>
-                    <div class="flex-container gap">
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ColmarDesktopPic1.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/ColmarMobilePic1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ColmarDesktopPic2.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/ColmarMobilePic2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/ColmarDesktopPic3.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/ColmarMobilePic3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h2>Fotomatic</h2>
-                    <div class="flex-container gap">
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/FotomaticDesktopPic1.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/FotomaticMobilePic1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/FotomaticDesktopPic2.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/FotomaticMobilePic2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="picstack">
-                            <div class="flex-container flex-column">
-                                <div>
-                                    <img src="PortfolioPics/FotomaticDesktopPic3.png" alt="">
-                                </div>
-
-                                <div>
-                                    <img src="PortfolioPics/FotomaticMobilePic3.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="project-card">
+                <h2>Company</h2>
+                <div class="flex-container gap">
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/CompanyDesktopPic1.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/CompanyMobilePic1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/CompanyDesktopPic2.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/CompanyMobilePic2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/CompanyDesktopPic3.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/CompanyMobilePic3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>Colmar</h2>
+                <div class="flex-container gap">
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ColmarDesktopPic1.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/ColmarMobilePic1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ColmarDesktopPic2.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/ColmarMobilePic2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/ColmarDesktopPic3.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/ColmarMobilePic3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>Fotomatic</h2>
+                <div class="flex-container gap">
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/FotomaticDesktopPic1.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/FotomaticMobilePic1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/FotomaticDesktopPic2.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/FotomaticMobilePic2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex-container flex-column gap picstack">
+                        <div>
+                            <img src="PortfolioPics/FotomaticDesktopPic3.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="PortfolioPics/FotomaticMobilePic3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div id="about">
 
-        </div>
 
-        <div id="contact">
-            <h2>Contact</h2>
-
-            <div class="flex-container">
-
-                <div class="box">
-        
-                  <h3>email: garyjyam@gmail.com</h3>
-        
-                </div>
-                
-                <div class="box">
-        
-                  <h3></h3>
-        
-                </div>
-        
-                <div class="box flex-container">
-    
-                    <div class="github">
-                    <i class="fa fa-github"></i>
-                    </div>
-    
-                    <div class="facebook">
-                    <i class="fa fa-facebook"></i>
-                    </div>
-    
-                    <div class="instagram">
-                    <i class="fa fa-instagram"></i>
-                    </div>
-    
-                    <div class="x-twitter">
-                    <i class="fa fa-x-twitter"></i>
-                    </div>
-    
-                    <div class="linkedin">
-                    <i class="fa fa-linkedin"></i>
-                    </div>
-    
-                </div>
-
-        </div>
 
     </main>
 
-    <script>
-        
-        const portfolioSection = document.getElementById('portfolio');
-        const aboutSection = document.getElementById('about');
-        const contactSection = document.getElementById('contact');
-
-        let portfolioIsVisible = true;
-        let aboutIsVisible = true;
-        let contactIsVisible = true;
-
-        const pToggle = () => {
-            if (portfolioIsVisible === true) {
-                portfolioSection.style.visibility = 'hidden';
-                portfolioIsVisible = false;
-            } else {
-                portfolioSection.style.visibility = 'visible';
-                portfolioIsVisible = true;
-            };
-        };
-
-        const aToggle = () => {
-            if(aboutIsVisible === true) {
-                aboutSection.style.visibility = 'hidden';
-                aboutIsVisible = false;
-            } else {
-                aboutSection.style.visibility = 'visible';
-                aboutIsVisible = true;
-            };
-        };
-
-        const cToggle = () => {
-            if(contactIsVisible === true) {
-                contactSection.style.visibility = 'hidden';
-                contactIsVisible = false;
-            } else {
-                contactSection.style.visibility = 'visible';
-                contatIsVisible = true;
-            };
-        };
+    <script src="./main.js">
 
     </script>
 
