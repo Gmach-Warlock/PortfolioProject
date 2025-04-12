@@ -29,14 +29,14 @@ ul {
 
 h1 {
   font-family: var(--ff-third);
-  font-size: 12rem;
+  font-size: 8rem;
   color: white;
-  background-image: linear-gradient(to bottom, hsl(51, 13%, 32%), 88%, hsl(51, 13%, 10%));
   text-shadow: 0px 5px 5px hsl(50, 15%, 54%), inset 0px 3px 3px black, inset 0px -3px 3px black;
   font-style: italic;
-  padding: 3.5rem 8rem;
+  padding: .5rem .8rem;
   border-radius: .75rem;
   box-shadow: inset 0px -3px 3px hsl(51, 13%, 32%), inset 0px 4px 4px hsl(51, 13%, 13%), 0px 3px 3px hsl(51, 13%, 19%);
+  z-index: 5;
 }
 
 
@@ -44,10 +44,7 @@ p {
   font-size: 3rem;
 }
 
-.picstack img {
-  width: 14rem;
-  height: auto;
-}
+
 
 /* utility */
 
@@ -150,16 +147,16 @@ button:active {
   }
 }
 
-@keyframes floatUp {
+@keyframes floatLeft {
   0% {
-    transform: translateY(25rem);
+    transform: translateX(25rem);
     opacity: 0;
   }
   55% {
     opacity: 1;
   }
   100% {
-    transform: translateY(0rem);
+    transform: translateX(0rem);
   }
 }
     
@@ -173,8 +170,8 @@ button:active {
   animation-duration: 4s;
 }
 
-.animation-floatUp {
-  animation-name: floatUp;
+.animation-floatLeft {
+  animation-name: floatLeft;
   animation-duration: 3s;
 }
 
@@ -191,7 +188,7 @@ button:active {
 /* hero */
 
 .hero {
-  height: 100%;
+  height: 50rem;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -200,8 +197,9 @@ button:active {
 
 .cta-buttons {
   position: relative;
-  bottom: 5rem;
+  
   gap: 2rem;
+  justify-self: center;
 }
 
 .cta-buttons button {
@@ -209,15 +207,49 @@ button:active {
 
 }
 
+.banner {
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 1rem;
+}
+
 
 /* portfolio */
 
 #portfolio {
-  transform: translateY(-150%);
-
+  
+  position: relative;
+  bottom: 44rem;
+  visibility: hidden;
 }
 
+.picstack img {
+  width: 10rem;
+  height: auto;
+}
 
+.portfolio-pic img {
+  width: 20rem;
+  height: auto;
+  position: absolute;
+  z-index: 5;
+}
+
+/* about */
+
+
+
+#about {
+  background-image: linear-gradient(to bottom, hsl(51, 59%, 66%), 50%, hsl(51, 59%, 46%));
+  color: hsl(51, 13%, 20%);
+  height: 25%;
+  width: 25%;
+  z-index: 5;
+  justify-self: end;
+  position: relative;
+  bottom: 65%;
+  right: 5%;
+}
 
 /* contact */
 
@@ -225,7 +257,7 @@ button:active {
   width: 100%;
   color: white;
   position: relative;
-  bottom: 5rem;
+  top: 4rem;
   visibility: hidden;
 }
 
@@ -233,3 +265,23 @@ button:active {
   align-items: center;
 }
 
+#contact h2 {
+  text-align: center;
+  width: 25%;
+  justify-self: center;
+  
+}
+
+.contact-info {
+  position: relative;
+  top: 1rem;
+}
+
+/* background */
+
+.background {
+  width: 98%;
+  height: 98%;
+  justify-content: center;
+
+}

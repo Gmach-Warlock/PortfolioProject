@@ -18,40 +18,66 @@
         
         <!-- hero section -->
      
-        <div class="hero flex-container flex-column">
+        <div class="hero flex-container flex-column space-between">
 
-            <div class="titles animation-floatUp">
-                <p>Web Developer, Musician, Creative Thinker</p>
-            </div>
+            <div class="background">
 
-            <div class="name animation-fadeIn">
-                <h1>G-Mach</h1>
-            </div>
+                <div class="main-container">
 
-            <div id="contact">
-                <h2>Contact</h2>
-                <div class="flex-container space-between">
-
-                    <div class="email">
-                        <span>garyjyam@gmail.com</span>
+                    <div class="titles animation-floatLeft">
+                        <p>Web Developer, Musician, Creative Thinker</p>
                     </div>
 
-                    <div class="social flex-container">
-                        <ul>
-                            <li><a href="">Github</a></li>
-                            <li><a href="">Linkedin</a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
+                    <div class="banner flex-container">
+
+                        <div class="portfolio-pic">
+                            <img src="PortfolioPics/PortfolioPic.png" alt="">
+                        </div>
+
+                        <div class="title-main">
+                            <h1 class="name animation-fadeIn">G-Mach</h1>
+                        </div>
+
+                        <div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="contact">
+                        <h2>Contact</h2>
+                        <div class="contact-info flex-container space-between">
+
+                            <div class="email">
+                                <span>garyjyam@gmail.com</span>
+                            </div>
+
+                            <div class="social flex-container">
+                                <ul>
+                                    <li><a href="">Github</a></li>
+                                    <li><a href="">Linkedin</a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons flex-container animation-bounceIn">
+                        <button onclick="pToggle()">Portfolio</button>
+                        <button onclick="aToggle()">About</button>
+                        <button onclick="cToggle()">Contact</button>
                     </div>
 
                 </div>
-            </div>
 
-            <div class="cta-buttons flex-container animation-bounceIn">
-                <button onclick="pToggle()">Portfolio</button>
-                <button onclick="aToggle()">About</button>
-                <button onclick="cToggle()">Contact</button>
+                <div id="about">
+                    <div class="card">
+                        <h3>About me</h3>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -61,7 +87,7 @@
         <div id="portfolio" class="flex-container gap overflow">
 
             <div class="project-card">
-                <h2>Club</h2>
+                <h2><a href="https://g-mach-responsive-club-project.netlify.app/" target="_blank">Club</a></h2>
                 <div class="flex-container gap">
                     <div class="flex-container flex-column gap picstack">
                         <div>
@@ -96,7 +122,7 @@
             </div>
 
             <div class="project-card">
-                <h2>Company</h2>
+                <h2><a href="https://g-mach-company-home-page-project.netlify.app/" target="_blank">Company</a></h2>
                 <div class="flex-container gap">
                     <div class="flex-container flex-column gap picstack">
                         <div>
@@ -131,7 +157,7 @@
             </div>
 
             <div class="project-card">
-                <h2>Colmar</h2>
+                <h2><a href="https://g-mach-colmar-academy-project.netlify.app/" target="_blank">Colmar</a></h2>
                 <div class="flex-container gap">
                     <div class="flex-container flex-column gap picstack">
                         <div>
@@ -166,7 +192,7 @@
             </div>
 
             <div class="project-card">
-                <h2>Fotomatic</h2>
+                <h2><a href="https://g-mach-fotomatic-fixer-project.netlify.app/" target="_blank">Fotomatic</a></h2>
                 <div class="flex-container gap">
                     <div class="flex-container flex-column gap picstack">
                         <div>

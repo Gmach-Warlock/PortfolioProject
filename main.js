@@ -4,8 +4,8 @@ const portfolioSection = document.getElementById('portfolio');
 const aboutSection = document.getElementById('about');
 const contactSection = document.getElementById('contact');
 
-let portfolioIsVisible = true;
-let aboutIsVisible = true;
+let portfolioIsVisible = false;
+let aboutIsVisible = false;
 let contactIsVisible = false;
 
 
