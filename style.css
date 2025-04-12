@@ -1,0 +1,209 @@
+:root {
+  --color-400: hsl(245, 59%, 66%);
+  --color-300: hsl(50, 15%, 54%);
+  --color-200: hsl(51, 59%, 66%);
+  --color-600: hsl(243, 7%, 49%);
+  --color-700: hsl(51, 13%, 32%);
+  --color-800: hsl(245, 47%, 15%);
+
+  --ff-main: "citrus-gothic-inline", sans-serif;
+  --ff-second: "citrus-gothic-shadow", sans-serif;
+  --ff-third: "citrus-gothic-rough", sans-serif;
+  
+}
+
+/* general settings */
+
+body {
+  font-family: var(--ff-main);
+  background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+
+  font-size: 12rem;
+  text-shadow: 0px 5px 5px hsl(50, 15%, 54%), inset 0px 3px 3px black;
+  font-style: italic;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.picstack img {
+  width: 12rem;
+  height: auto;
+}
+
+/* utility */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  
+}
+
+.overflow {
+  overflow: auto;
+}
+
+.gap {
+  gap: 1rem
+}
+
+/* components with state */
+
+button {
+  font-size: 1.75rem;
+  background-color: white;
+  background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
+  font-family: var(--ff-second);
+  box-shadow: 0px 3px 3px white;
+}
+
+button:hover {
+  background-color: var(--color-200);
+  box-shadow: 0px 3px 3px var(--color-200);
+}
+
+button:active {
+  background-color: var(--color-700);
+  box-shadow: 0px 0px 0px var(--color-700);
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
+/* keyframes */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.8
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  65% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  95% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(25rem);
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+    
+.animation-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.animation-bounceIn {
+  animation-name: bounceIn;
+  animation-duration: 4s;
+}
+
+.animation-floatUp {
+  animation-name: floatUp;
+  animation-duration: 3s;
+}
+
+
+/* header */
+
+header {
+  margin: 0;
+}
+
+header li {
+  display: inline;
+  gap: 1rem;
+  font-family: var(--ff-main);
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .flex-container {
+  justify-content: end;
+}
+
+/* main */
+
+
+/* hero */
+
+.hero {
+  height: 50rem;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  bottom: 10rem;
+}
+
+
+/* portfolio */
+
+#portfolio {
+  transform: translateY(-150%);
+  visibility: hidden;
+}
+
+.cta-buttons {
+  position: relative;
+  top: 6rem;
+}
