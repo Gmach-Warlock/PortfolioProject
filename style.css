@@ -163,24 +163,9 @@ button:active {
 
 /* header */
 
-header {
-  margin: 0;
-}
 
-header li {
-  display: inline;
-  gap: 1rem;
-  font-family: var(--ff-main);
-}
 
-header a {
-  text-decoration: none;
-  color: white;
-}
 
-header .flex-container {
-  justify-content: end;
-}
 
 /* main */
 
@@ -192,18 +177,36 @@ header .flex-container {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  bottom: 10rem;
+  bottom: 3rem;
+  padding-block: 3rem;
+}
+
+.hero p {
+  position: relative;
+  bottom: 2rem;
 }
 
 
 /* portfolio */
 
 #portfolio {
-  transform: translateY(-150%);
+  transform: translateY(-145%);
   visibility: hidden;
 }
 
 .cta-buttons {
   position: relative;
-  top: 6rem;
+  bottom: 5rem;
+}
+
+/* contact */
+
+#contact {
+
+  color: white;
+}
+
+#contact .flex-container {
+  align-items: center;
+  justify-content: space-between;
 }
