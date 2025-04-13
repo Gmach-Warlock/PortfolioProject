@@ -1,4 +1,4 @@
-// declaring my global variables
+// declaring my global variables for toggle visibility functions
 
 const portfolioSection = document.getElementById('portfolio');
 const aboutSection = document.getElementById('about');
@@ -9,7 +9,7 @@ let aboutIsVisible = false;
 let contactIsVisible = false;
 
 
-// toggle functions
+// toggle visibility functions
 
 const pToggle = () => {
     if (portfolioIsVisible === true) {
@@ -40,4 +40,7 @@ const cToggle = () => {
         contactIsVisible = true;
     };
 };
+
+
+
 

@@ -79,33 +79,58 @@ p {
 }
 
 /* components with state */
-
+  /* buttons */
 button {
   font-size: 1.75rem;
   background-color: white;
   background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
-  font-family: var(--ff-second);
+  font-family: var(--ff-third);
   box-shadow: 0px 3px 3px white;
+  text-shadow: 2px 2px var(--color-800), inset 0 2px 2px var(--color-700);
 }
 
 button:hover {
   background-color: var(--color-200);
-  box-shadow: 0px 3px 3px var(--color-200);
+  color: var(--color-400);
+  box-shadow: 0px 3px 3px var(--color-400);
 }
 
 button:active {
+  color: var(--color-700);
   background-color: var(--color-700);
   box-shadow: 0px 0px 0px var(--color-700);
   margin-top: 3px;
   margin-bottom: -3px;
 }
 
+/* links */
+
+a {
+  color: white;
+
+}
+
+a:hover {
+  color: var(--color-400)
+}
+
+a:active {
+  color: var(--color-700)
+}
+
+#portfolio a {
+  font-family: var(--ff-main);
+}
+
+/* section components */
+
 .social li {
   display: inline;
 }
 
-.social a {
-  color: white;
+
+#contact a {
+  font-family: var(--ff-second);
 }
 
 /* keyframes */
@@ -233,7 +258,10 @@ button:active {
   height: auto;
   position: absolute;
   z-index: 5;
+  border-radius: .5rem;
 }
+
+
 
 /* about */
 
@@ -269,7 +297,8 @@ button:active {
   text-align: center;
   width: 25%;
   justify-self: center;
-  
+  font-family: var(--ff-second);
+  font-style: italic;
 }
 
 .contact-info {
@@ -284,4 +313,8 @@ button:active {
   height: 98%;
   justify-content: center;
 
+}
+
+.togglableItem {
+  visibility: visible;
 }
