@@ -20,7 +20,7 @@ body {
   height: 100%;
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 ul {
@@ -81,7 +81,7 @@ p {
 /* components with state */
   /* buttons */
 button {
-  font-size: 1.75rem;
+  font-size: 1.rem;
   background-color: white;
   background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
   font-family: var(--ff-third);
@@ -222,15 +222,12 @@ a:active {
 
 .cta-buttons {
   position: relative;
-  
-  gap: 2rem;
+  font-size: 1.75rem;
+  gap: 1rem;
   justify-self: center;
+  z-index: 5;
 }
 
-.cta-buttons button {
-  font-size: 2.5rem;
-
-}
 
 .banner {
   justify-content: space-around;
@@ -244,7 +241,7 @@ a:active {
 #portfolio {
   
   position: relative;
-  bottom: 44rem;
+  bottom: 42rem;
   visibility: hidden;
 }
 
@@ -257,7 +254,7 @@ a:active {
   width: 20rem;
   height: auto;
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   border-radius: .5rem;
 }
 
@@ -265,18 +262,28 @@ a:active {
 
 /* about */
 
-
-
 #about {
   background-image: linear-gradient(to bottom, hsl(51, 59%, 66%), 50%, hsl(51, 59%, 46%));
   color: hsl(51, 13%, 20%);
-  height: 25%;
   width: 25%;
   z-index: 5;
   justify-self: end;
   position: relative;
-  bottom: 65%;
+  bottom: 75%;
   right: 5%;
+  text-align: start;
+  padding: 0 1rem 1.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+#about span {
+  justify-self: start;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: .5rem;
 }
 
 /* contact */
@@ -304,6 +311,7 @@ a:active {
 .contact-info {
   position: relative;
   top: 1rem;
+  z-index: 5;
 }
 
 /* background */
