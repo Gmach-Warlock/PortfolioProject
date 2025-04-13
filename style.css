@@ -33,10 +33,14 @@ h1 {
   color: white;
   text-shadow: 0px 5px 5px hsl(50, 15%, 54%), inset 0px 3px 3px black, inset 0px -3px 3px black;
   font-style: italic;
-  padding: .5rem .8rem;
+  padding: .1rem .8rem;
   border-radius: .75rem;
   box-shadow: inset 0px -3px 3px hsl(51, 13%, 32%), inset 0px 4px 4px hsl(51, 13%, 13%), 0px 3px 3px hsl(51, 13%, 19%);
-  z-index: 5;
+  z-index: 1;
+  position: relative;
+  bottom: 2rem;
+  background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
+
 }
 
 
@@ -220,6 +224,11 @@ a:active {
 
 }
 
+.titles {
+  position: relative;
+  bottom: .75rem;
+}
+
 .cta-buttons {
   position: relative;
   font-size: 1.75rem;
@@ -241,7 +250,7 @@ a:active {
 #portfolio {
   
   position: relative;
-  bottom: 42rem;
+  bottom: 38rem;
   visibility: hidden;
 }
 
@@ -269,7 +278,7 @@ a:active {
   z-index: 5;
   justify-self: end;
   position: relative;
-  bottom: 75%;
+  bottom: 58%;
   right: 5%;
   text-align: start;
   padding: 0 1rem 1.5rem 1rem;
@@ -325,4 +334,22 @@ a:active {
 
 .togglableItem {
   visibility: visible;
+}
+
+@media only screen and (max-width: 487px) {
+  #about {
+    bottom: 62%;
+  }
+}
+
+@media only screen and (min-width: 824px) {
+  #portfolio {
+    bottom: 41rem;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  h1 {
+    bottom: 5.5rem;
+  }
 }
