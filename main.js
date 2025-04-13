@@ -1,3 +1,4 @@
+
 // declaring my global variables for toggle visibility functions
 
 const portfolioSection = document.getElementById('portfolio');
@@ -42,4 +43,11 @@ const cToggle = () => {
 };
 
 
+let pageTitle = document.getElementById('pageTitle')
 
+const rainbow = () => {
+    pageTitle.classList.add('animation-rainbow');
+    setTimeout(() => {
+        pageTitle.classList.remove('animation-rainbow');
+    }, 1500);
+};

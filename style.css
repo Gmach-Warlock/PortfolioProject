@@ -1,270 +1,323 @@
 :root {
-  --color-400: hsl(245, 59%, 66%);
-  --color-300: hsl(50, 15%, 54%);
-  --color-200: hsl(51, 59%, 66%);
-  --color-600: hsl(243, 7%, 49%);
-  --color-700: hsl(51, 13%, 32%);
-  --color-800: hsl(245, 47%, 15%);
+--color-400: hsl(245, 59%, 66%);
+--color-300: hsl(50, 15%, 54%);
+--color-200: hsl(51, 59%, 66%);
+--color-600: hsl(243, 7%, 49%);
+--color-700: hsl(51, 13%, 32%);
+--color-800: hsl(245, 47%, 15%);
 
-  --ff-main: "citrus-gothic-inline", sans-serif;
-  --ff-second: "citrus-gothic-shadow", sans-serif;
-  --ff-third: "citrus-gothic-rough", sans-serif;
-  
+--ff-main: "citrus-gothic-inline", sans-serif;
+--ff-second: "citrus-gothic-shadow", sans-serif;
+--ff-third: "citrus-gothic-rough", sans-serif;
+
 }
 
 /* general settings */
 
 body {
-  font-family: var(--ff-main);
-  background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
-  height: 100%;
-  color: white;
-  text-align: center;
-  font-size: 1.3rem;
+font-family: var(--ff-main);
+background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
+height: 100%;
+color: white;
+text-align: center;
+font-size: 1.3rem;
 }
 
 ul {
-  list-style-type: none;
+list-style-type: none;
+}
+
+p {
+font-size: 3rem;
 }
 
 h1 {
-  font-family: var(--ff-third);
-  font-size: 8rem;
-  color: white;
-  text-shadow: 0px 5px 5px hsl(50, 15%, 54%), inset 0px 3px 3px black, inset 0px -3px 3px black;
-  font-style: italic;
-  padding: .1rem .8rem;
-  border-radius: .75rem;
-  box-shadow: inset 0px -3px 3px hsl(51, 13%, 32%), inset 0px 4px 4px hsl(51, 13%, 13%), 0px 3px 3px hsl(51, 13%, 19%);
-  z-index: 1;
-  position: relative;
-  bottom: 2rem;
-  background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
+font-family: var(--ff-third);
+font-size: 8rem;
+color: white;
+text-shadow: 0px 5px 5px hsl(50, 15%, 54%), inset 0px 3px 3px black, inset 0px -3px 3px black;
+font-style: italic;
+padding: .1rem .8rem;
+border-radius: .75rem;
+box-shadow: inset 0px -3px 3px hsl(51, 13%, 32%), inset 0px 4px 4px hsl(51, 13%, 13%), 0px 3px 3px hsl(51, 13%, 19%);
+z-index: 1;
+position: relative;
+bottom: 2rem;
+background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
 
 }
-
-
-p {
-  font-size: 3rem;
-}
-
-
 
 /* utility */
 
 .flex-container {
-  display: flex;
+display: flex;
 }
 
 .flex-column {
-  flex-direction: column;
+flex-direction: column;
 }
 
 .grid-container {
-  display: grid;
+display: grid;
 }
 
 .wrapper {
-  margin-inline: auto;
-  padding-inline: 2rem;
-  
+margin-inline: auto;
+padding-inline: 2rem;
+
 }
 
 .space-between {
-  justify-content: space-between;
+justify-content: space-between;
 }
 
 .overflow {
-  overflow: auto;
+overflow: auto;
 }
 
 .gap {
-  gap: 1rem
+gap: 1rem
 }
 
 /* components with state */
-  /* buttons */
+/* buttons */
 button {
-  font-size: 1.rem;
-  background-color: white;
-  background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
-  font-family: var(--ff-third);
-  box-shadow: 0px 3px 3px white;
-  text-shadow: 2px 2px var(--color-800), inset 0 2px 2px var(--color-700);
+font-size: 1.rem;
+background-color: white;
+background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
+font-family: var(--ff-third);
+box-shadow: 0px 3px 3px white;
+text-shadow: 2px 2px var(--color-800), inset 0 2px 2px var(--color-700);
 }
 
 button:hover {
-  background-color: var(--color-200);
-  color: var(--color-400);
-  box-shadow: 0px 3px 3px var(--color-400);
+background-color: var(--color-200);
+color: var(--color-400);
+box-shadow: 0px 3px 3px var(--color-400);
 }
 
 button:active {
-  color: var(--color-700);
-  background-color: var(--color-700);
-  box-shadow: 0px 0px 0px var(--color-700);
-  margin-top: 3px;
-  margin-bottom: -3px;
+color: var(--color-700);
+background-color: var(--color-700);
+box-shadow: 0px 0px 0px var(--color-700);
+margin-top: 3px;
+margin-bottom: -3px;
 }
 
 /* links */
 
 a {
-  color: white;
+color: white;
 
 }
 
 a:hover {
-  color: var(--color-400)
+color: var(--color-400)
 }
 
 a:active {
-  color: var(--color-700)
+color: var(--color-700)
 }
 
 #portfolio a {
-  font-family: var(--ff-main);
+font-family: var(--ff-main);
 }
 
 /* section components */
 
 .social li {
-  display: inline;
+display: inline;
 }
 
 
 #contact a {
-  font-family: var(--ff-second);
+font-family: var(--ff-second);
 }
+
+h1:hover {
+color: var(--color-400);
+}
+
+.hero p:hover {
+color: var(--color-400);
+}
+
 
 /* keyframes */
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+0% {
+  opacity: 0;
+}
 
-  80% {
-    opacity: 0;
-  }
+80% {
+  opacity: 0;
+}
 
-  90% {
-    opacity: 0.8
-  }
+90% {
+  opacity: 0.8
+}
 
-  100% {
-    opacity: 1;
-  }
+100% {
+  opacity: 1;
+}
 }
 
 
 @keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  65% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  95% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
+0% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+65% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+95% {
+  transform: scale(1.2);
+  opacity: 1;
+}
+100% {
+  transform: scale(1);
+}
 }
 
 @keyframes floatLeft {
-  0% {
-    transform: translateX(25rem);
-    opacity: 0;
-  }
-  55% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0rem);
-  }
+0% {
+  transform: translateX(25rem);
+  opacity: 0;
 }
-    
+55% {
+  opacity: 1;
+}
+100% {
+  transform: translateX(0rem);
+}
+}
+
+@keyframes rainbow {
+0% {
+  color: red;
+}
+10% {
+  color: orange;
+}
+20% {
+  color: yellow;
+}
+30% {
+  color: green;
+}
+40% {
+  color: blue;
+}
+50% {
+  color: indigo;
+}
+60% {
+  color: violet;
+}
+70% {
+  color: white;
+}
+80% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+  
 .animation-fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 3s;
+animation-name: fadeIn;
+animation-duration: 3s;
 }
 
 .animation-bounceIn {
-  animation-name: bounceIn;
-  animation-duration: 4s;
+animation-name: bounceIn;
+animation-duration: 4s;
 }
 
 .animation-floatLeft {
-  animation-name: floatLeft;
-  animation-duration: 3s;
+animation-name: floatLeft;
+animation-duration: 3s;
 }
 
-
-/* header */
-
-
-
-
-
-/* main */
+.animation-rainbow {
+animation-name: rainbow;
+animation-duration: 4s;
+}
 
 
 /* hero */
 
 .hero {
-  height: 50rem;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-
+height: 50rem;
+width: 100vw;
+justify-content: center;
+align-items: center;
+padding-top: 1rem;
 }
 
 .titles {
-  position: relative;
-  bottom: .75rem;
+position: relative;
+bottom: .75rem;
+}
+
+.titles span {
+font-size: 3rem;
 }
 
 .cta-buttons {
-  position: relative;
-  font-size: 1.75rem;
-  gap: 1rem;
-  justify-self: center;
-  z-index: 5;
+position: relative;
+top: 2rem;
+font-size: 1.75rem;
+gap: 1rem;
+justify-self: center;
+z-index: 6;
+}
+
+.cta-buttons button {
+font-size: 2rem;
 }
 
 
 .banner {
-  justify-content: space-around;
-  align-items: center;
-  margin-block: 1rem;
+justify-content: space-around;
+align-items: center;
+margin-block: 1rem;
 }
 
 
 /* portfolio */
 
 #portfolio {
-  
-  position: relative;
-  bottom: 38rem;
-  visibility: hidden;
+
+position: relative;
+
+visibility: hidden;
+z-index: 3;
+}
+
+#portfolio h2 {
+  background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
+  box-shadow: inset 0px -3px 3px hsl(51, 13%, 32%), inset 0px 4px 4px hsl(51, 13%, 13%), 0px 3px 3px hsl(51, 13%, 19%);
+  border-radius: 5px;
+  z-index: 5;
+  width: 26%;
 }
 
 .picstack img {
-  width: 10rem;
-  height: auto;
+width: 10rem;
+height: auto;
 }
 
 .portfolio-pic img {
-  width: 20rem;
-  height: auto;
-  position: absolute;
-  z-index: 4;
-  border-radius: .5rem;
+width: 20rem;
+height: auto;
+position: absolute;
+z-index: 4;
+border-radius: .5rem;
 }
 
 
@@ -272,84 +325,98 @@ a:active {
 /* about */
 
 #about {
-  background-image: linear-gradient(to bottom, hsl(51, 59%, 66%), 50%, hsl(51, 59%, 46%));
-  color: hsl(51, 13%, 20%);
-  width: 25%;
-  z-index: 5;
-  justify-self: end;
-  position: relative;
-  bottom: 58%;
-  right: 5%;
-  text-align: start;
-  padding: 0 1rem 1.5rem 1rem;
-  font-size: 1.2rem;
+background-image: linear-gradient(to bottom, hsl(51, 59%, 66%), 50%, hsl(51, 59%, 46%));
+color: hsl(51, 13%, 20%);
+width: 25%;
+z-index: 5;
+justify-self: end;
+position: relative;
+bottom: 58%;
+right: 5%;
+text-align: start;
+padding: 0 1rem 1.5rem 1rem;
+font-size: 1.2rem;
+visibility: hidden;
 }
 
 #about span {
-  justify-self: start;
+justify-self: center;
 }
 
 #about h2 {
-  text-align: center;
-  font-size: 2.3rem;
-  padding-top: .5rem;
+text-align: center;
+font-size: 2.3rem;
+padding-top: .5rem;
 }
 
 /* contact */
 
 #contact {
-  width: 100%;
-  color: white;
-  position: relative;
-  top: 4rem;
-  visibility: hidden;
+width: 100%;
+color: white;
+position: relative;
+top: 4rem;
+visibility: hidden;
 }
 
 #contact .flex-container {
-  align-items: center;
+align-items: center;
 }
 
 #contact h2 {
-  text-align: center;
-  width: 25%;
-  justify-self: center;
-  font-family: var(--ff-second);
-  font-style: italic;
+text-align: center;
+width: 25%;
+justify-self: center;
+font-family: var(--ff-second);
+font-style: italic;
 }
 
 .contact-info {
-  position: relative;
-  top: 1rem;
-  z-index: 5;
+position: relative;
+top: 1rem;
+z-index: 5;
 }
 
 /* background */
 
 .background {
-  width: 98%;
-  height: 98%;
-  justify-content: center;
+width: 98%;
+height: 98%;
+justify-content: center;
 
 }
 
 .togglableItem {
-  visibility: visible;
+visibility: visible;
 }
 
 @media only screen and (max-width: 487px) {
-  #about {
-    bottom: 62%;
-  }
+#about {
+  bottom: 62%;
+}
 }
 
 @media only screen and (min-width: 824px) {
-  #portfolio {
-    bottom: 41rem;
-  }
+#portfolio {
+  bottom: 44rem;
+}
 }
 
 @media only screen and (max-width: 823px) {
-  h1 {
-    bottom: 5.5rem;
-  }
+h1 {
+  bottom: 5.5rem;
+  font-size: 7rem;
+}
+#portfolio {
+  bottom: 40rem;
+}
+#contact {
+  top: 8rem;
+}
+.cta-buttons button {
+  font-size: 1.5rem;
+}
+.titles {
+  font-size: 1.5rem;
+}
 }
