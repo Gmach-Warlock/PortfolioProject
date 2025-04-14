@@ -44,7 +44,7 @@ z-index: 1;
 position: relative;
 bottom: 2rem;
 background-image: linear-gradient(to top, hsl(51, 13%, 0%), 80%, hsl(51, 13%, 32%));
-
+cursor: pointer;
 }
 
 /* utility */
@@ -88,6 +88,7 @@ background-image: linear-gradient(to bottom, white, 95%, hsl(51, 66%, 66%));
 font-family: var(--ff-third);
 box-shadow: 0px 3px 3px white;
 text-shadow: 2px 2px var(--color-800), inset 0 2px 2px var(--color-700);
+cursor: pointer;
 }
 
 button:hover {
@@ -108,7 +109,7 @@ margin-bottom: -3px;
 
 a {
 color: white;
-
+cursor: pointer;
 }
 
 a:hover {
