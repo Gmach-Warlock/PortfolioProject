@@ -43,6 +43,8 @@ const cToggle = () => {
 };
 
 
+// rainbow color change for the h1
+
 let pageTitle = document.getElementById('pageTitle')
 
 const rainbow = () => {
@@ -51,3 +53,31 @@ const rainbow = () => {
         pageTitle.classList.remove('animation-rainbow');
     }, 1500);
 };
+
+// crumble the headline in 3 sections
+
+const crumble1 = document.getElementById('crumble1');
+const crumble2 = document.getElementById('crumble2');
+const crumble3 = document.getElementById('crumble3');
+
+const redWhiteBlue = () => {
+    setTimeout(() => {
+        crumble1.classList.add('animation-redWhiteBlue');
+    }, 100)
+
+    setTimeout(() => {
+        crumble2.classList.add('animation-redWhiteBlue');
+    }, 1500);
+
+    
+    setTimeout(() => {
+        crumble3.classList.add('animation-redWhiteBlue');
+    }, 3000);
+
+    setTimeout(() => {
+        crumble1.classList.remove('animation-redWhiteBlue');
+        crumble2.classList.remove('animation-redWhiteBlue');
+        crumble3.classList.remove('animation-redWhiteBlue');
+    }, 4500);
+
+}
