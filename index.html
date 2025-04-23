@@ -11,231 +11,566 @@
 
 <body>
 
+<!-- header -->
+
+    <header>
+        <div class="grid-container" role="presentation">
+
+            <div class="name">
+                <span id="g" onclick="nameFlasher()">G</span><span id="g-" onclick="nameFlasher()">-</span><span id="g-m" onclick="nameFlasher()">M</span><span id="g-ma" onclick="nameFlasher()">a</span><span id="g-mac" onclick="nameFlasher()">c</span><span id="g-mach" onclick="nameFlasher()">h</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
 
 <!-- main -->
 
-    <main> 
-        
-        <!-- hero section -->
-     
-        <div class="hero flex-container flex-column space-between" aria-label="hero section">
+    <main>
 
-            <div class="background" role="presentation">
+        <!-- hidden speech bubble-->
 
-                <div class="main-container">
+        <div class="speech-bubble" id="speechBubble">
+            <span>Thank you for stopping by!!</span>
+        </div>
 
-                    <div class="titles animation-floatLeft">
-                        <span id="crumble1" onclick="redWhiteBlue()">Web Developer, </span><span id="crumble2" onclick="redWhiteBlue()">Musician, </span><span id="crumble3" onclick="redWhiteBlue()">Creative Thinker</span>
+        <!-- hero -->
+
+        <section class="hero">
+
+            <div class="grid-container" role="presentation">
+
+                <article class="headline flex-container flex-column">
+                    <div role="presentation">
+                        <h1>Creativity driven learner</h1>
                     </div>
 
-                    <div class="banner flex-container" role="presentation">
-
-                        <div class="portfolio-pic">
-                            <img src="PortfolioPics/PortfolioPic.png" alt="portfolio picture">
-                        </div>
-
-                        <div class="title-main">
-                            <h1 class="name animation-fadeIn" id="pageTitle" onclick="rainbow()">GMach</h1>
-                        </div>
-
-                        <div>
-
-                        </div>
-
+                    <div role="presentation">
+                        <p class=" wrapper">My name is Gary Yamashita and I am currently studying web development. I deeply enjoy coding, and hope to work as a web developer. I continue to hone my skills in HTML, CSS, and javascript.</p>
                     </div>
 
-                    <div id="contact" aria-label="contact section">
-                        <div class="contact-info flex-container space-between">
-
-                            <div class="phone-number" aria-label="phone number">
-                                <span>(818) 939-9196</span>
-                            </div>
-
-                            <div class="social flex-container" aria-label="social media">
-                                <ul>
-                                    <li><a href="https://github.com/Gmach-Warlock" target="_blank">Github</a></li>
-                                    <li><a href="https://www.linkedin.com/in/gary-yamashita-531760227/" target="_blank">Linkedin</a></li>
-                                    <li><a href=""></a></li>
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
+                    <div class="hero-cta" role="presentation">
+                        <button onclick="toggleProfileInfo()">Learn More</button>
                     </div>
 
-                    <div class="cta-buttons flex-container animation-bounceIn">
-                        <button onclick="pToggle()">Portfolio</button>
-                        <button onclick="aToggle()">About</button>
-                        <button onclick="cToggle()">Contact</button>
-                    </div>
-
-                </div>
-
-                <div id="about" aria-label="about section">
-                    <div class="card" role="presentation">
-                        <h2>About</h2>
-                        <span>Name: Gary Yamashita</span><br>
+                    <div id="profile-info">
                         <span>Age: 46</span><br>
                         <span>Location: Los Angeles</span><br>
-                        <span>Hobbies: Guitar, Music Production, <br>Graphic Design, Gaming</span>
+                        <span>Hobbies: Guitar,</span><br>
+                        <span>Music Production, Coding,</span><br>
+                        <span>Graphic Design, Animation</span><br>
                     </div>
+                </article>
+
+                <div class="portrait" role="presentation">
+                    <img src="PortfolioPics/PortfolioPic.png" alt="portrait" onclick="toggleSpeechBubble()">
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <!-- portfolio -->
+
+        <section id="portfolio">
+
+            <h2>Projects</h2>
+
+            <div class="flex-container flex-column">
+
+                <!-- Club project-->
+
+                <div class="project">
+
+                    <div class="card">
+
+                        <h3><a href="https://g-mach-responsive-club-project.netlify.app/" target="_blank">Club Responsive Page</a></h3>
+
+                        <!-- normal size collage -->
+
+                        <div id="club-collage" class="flex-container collage">
+                            
+                            <div class="flex-container flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic1.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic1.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic2.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic2.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic3.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic3.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                         <!-- blowup size collage -->
+
+                        <div id="club-blowup" class="flex-container blowup">
+                            
+                            <div class="flex-container flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic1.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic1.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic2.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic2.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/ClubDesktopPic3.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/ClubMobilePic3.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <figcaption>The aim of this project was to create a responsive homepage with styles which signal to the use when an element is clickable.</figcaption>
+
+                    </div>
+
+                </div>
+                
+                <!-- Company-->
+
+                <div class="project">
+
+                    <h3><a href="https://g-mach-company-home-page-project.netlify.app/" target="_blank">Company Homepage</a></h3>
+
+                        <!-- normal size collage -->
+
+                        <div id="company-collage" class="flex-container collage">
+                            
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic1.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic1.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic2.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic2.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic3.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic3.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- blowup size collage -->
+
+                        <div id="company-blowup" class="flex-container blowup">
+                            
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic1.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic1.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic2.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic2.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="flex-container-flex-column">
+
+                                <div class="desktop-pic">
+                                    <img src="PortfolioPics/CompanyDesktopPic3.png" alt="">
+                                </div>
+
+                                <div class="mobile-pic">
+                                    <img src="PortfolioPics/CompanyMobilePic3.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <figcaption>The goal of this project was to create the home page of a mock company. The layout is the primary focus of the project. It is a static website.</figcaption>
+
+                </div>
+
+                <!-- Colmar-->
+
+                <div class="project">
+
+                    <h3><a href="https://g-mach-colmar-academy-project.netlify.app/" target="_blank">Colmar Academy</a></h3>
+
+                    <!-- normal size collage -->
+
+                    <div id="colmar-collage" class="flex-container collage">
+                        
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic1.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic1.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic2.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic2.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic3.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic3.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- blowup size collage -->
+
+                    <div id="colmar-blowup" class="flex-container blowup">
+                        
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic1.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic1.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic2.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic2.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/ColmarDesktopPic3.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/ColmarMobilePic3.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <figcaption>The goal of this project was to create a responsive homepage from a wireframe which contained very little information about the layout. It is a static website</figcaption>
+
+                </div>
+
+                 <!-- Fotomatic -->
+
+                 <div class="project fotomatic">
+
+                    <h3><a href="https://g-mach-fotomatic-fixer-project.netlify.app/" target="_blank">Fix Fotomatic</a></h3>
+
+                    <!-- normal size collage -->
+
+                    <div id="fotomatic-collage" class="flex-container collage">
+                        
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic1.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic1.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic2.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic2.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic3.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic3.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                     <!-- blowup size collage -->
+
+                     <div id="fotomatic-blowup" class="flex-container blowup">
+                        
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic1.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic1.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic2.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic2.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-container-flex-column">
+
+                            <div class="desktop-pic">
+                                <img src="PortfolioPics/FotomaticDesktopPic3.png" alt="">
+                            </div>
+
+                            <div class="mobile-pic">
+                                <img src="PortfolioPics/FotomaticMobilePic3.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>                   
+
+                    <figcaption>The aim of this project was to fix the broken code, and set mobile, tablet, and desktop layouts.</figcaption>
+
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-        <!-- portfolio section -->
+        <!-- about -->
 
-        <div id="portfolio" class="flex-container gap overflow" aria-label="portfolio section">
+        <section id="about">
+            <h2>About</h2>
 
-            <div class="project-card" aria-label="project">
-                <h2><a href="https://g-mach-responsive-club-project.netlify.app/" target="_blank">Club</a></h2>
-                <div class="flex-container gap">
-                    <div class="flex-container flex-column gap picstack" role="presentation">
+            <div class="card">
+                <div class="flex-container flex-column">
+                    <div class="experience">
+                        <h2>Experience</h2>
+
                         <div>
-                            <img src="PortfolioPics/ClubDesktopPic1.png" alt="">
+                            <h3>Costco</h3>
+                            <p>I worked at Costco from 1997 to 2022. Most of my career was in merchandising, but I spent time on the Front End as well. I was a supervisor for three years before stepping down and returning to merchandising.</p>
                         </div>
 
                         <div>
-                            <img src="PortfolioPics/ClubMobilePic1.png" alt="">
+                            <h3>Construction</h3>
+                            <p>I worked as an apprentice to my uncle for a couple years.</p>
                         </div>
+
+                        <div>
+                            <h3>Big Rigs Inc</h3>
+                            <p>I was a truck dispatcher for Big Rigs Inc for a little over a year.</p>
+                        </div>
+
+                        <div>
+                            <h3>Music</h3>
+                            <p>I have been playing guitar off and on for almost thirty years. I learned to read music at an early age, and have hundreds of hours on Ableton as well.</p>
+                        </div>
+
+                        <div>
+                            <h3>Art</h3>
+                            <p>I dabble in graphic design and animation programs as well. I love to create.</p>
+                        </div>
+
                     </div>
 
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/ClubDesktopPic2.png" alt="">
+                    <div class="education">
+                        <h2>Education</h2>
+
+                        <div class="high-school">
+                        
+                            <h3>High School</h3>
+                            <p>Graduated from St Genevieve High School; class of 1997. I had four years of honors classes and graduated with a 4.3 GPA.</p>
+
                         </div>
 
-                        <div>
-                            <img src="PortfolioPics/ClubMobilePic2.png" alt="">
-                        </div>
-                    </div>
+                        <div class="codecademy">
 
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/ClubDesktopPic3.png" alt="">
-                        </div>
+                            <h3>Codecademy</h3>
 
-                        <div>
-                            <img src="PortfolioPics/ClubMobilePic3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="flex-container">
+                                <div class="left-column">
+                                    <h4>Completed</h4>
+                                    <ul>
+                                        <li>Learn HTML</li>
+                                        <li>Learn HTML: Forms</li>
+                                        <li>Learn HTML: Semantic HTML</li>
+                                        <li>Learn HTML: fundamentals</li>
+                                        <li>Learn CSS</li>
+                                        <li>Learn CSS: Introduction</li>
+                                        <li>Learn CSS: Box Model and Layout</li>
+                                        <li>Learn CSS: Flexbox and Grid</li>
+                                        <li>Learn CSS: Responsive Design</li>
+                                        <li>Learn Intermediate CSS</li>
+                                        <li>Learn Javascript</li>
+                                        <li>Building Interactive Javascript Websites</li>
+                                        <li>Build a Website with HTML, CSS, and Github Pages</li>
+                                        <li>Learn the Command Line</li>
+                                        <li>Code Foundations</li>
+                                    </ul>
 
-            <div class="project-card" aria-label="project">
-                <h2><a href="https://g-mach-company-home-page-project.netlify.app/" target="_blank">Company</a></h2>
-                <div class="flex-container gap">
-                    <div class="flex-container flex-column gap picstack">
-                        <div>
-                            <img src="PortfolioPics/CompanyDesktopPic1.png" alt="">
-                        </div>
+                                </div>
 
-                        <div>
-                            <img src="PortfolioPics/CompanyMobilePic1.png" alt="">
-                        </div>
-                    </div>
+                                <div class="right-column">
+                                    <h4>Currently doing Front End Engineering Skill Path</h4>
+                                    <ul>
+                                        <li>React Part II</li>
+                                        <li>Build a Back-end with Express.js</li>
+                                        <li>Jamming react project</li>
 
-                    <div class="flex-container flex-column gap picstack">
-                        <div>
-                            <img src="PortfolioPics/CompanyDesktopPic2.png" alt="">
-                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            
 
-                        <div>
-                            <img src="PortfolioPics/CompanyMobilePic2.png" alt="">
-                        </div>
-                    </div>
 
-                    <div class="flex-container flex-column gap picstack">
-                        <div>
-                            <img src="PortfolioPics/CompanyDesktopPic3.png" alt="">
                         </div>
 
-                        <div>
-                            <img src="PortfolioPics/CompanyMobilePic3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card" aria-label="project">
-                <h2><a href="https://g-mach-colmar-academy-project.netlify.app/" target="_blank">Colmar</a></h2>
-                <div class="flex-container gap">
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/ColmarDesktopPic1.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/ColmarMobilePic1.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/ColmarDesktopPic2.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/ColmarMobilePic2.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/ColmarDesktopPic3.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/ColmarMobilePic3.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card" aria-label="project">
-                <h2><a href="https://g-mach-fotomatic-fixer-project.netlify.app/" target="_blank">Fotomatic</a></h2>
-                <div class="flex-container gap" role="presentation">
-                    <div class="flex-container flex-column gap picstack">
-                        <div>
-                            <img src="PortfolioPics/FotomaticDesktopPic1.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/FotomaticMobilePic1.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/FotomaticDesktopPic2.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/FotomaticMobilePic2.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="flex-container flex-column gap picstack" role="presentation">
-                        <div>
-                            <img src="PortfolioPics/FotomaticDesktopPic3.png" alt="">
-                        </div>
-
-                        <div>
-                            <img src="PortfolioPics/FotomaticMobilePic3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
+            
+        </section>
 
     </main>
 
+    <footer id="contact">
+
+    </footer>
+  
     <script src="./main.js">
 
     </script>

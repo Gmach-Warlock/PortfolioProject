@@ -1,83 +1,204 @@
 
-// declaring my global variables for toggle visibility functions
+// declaring my global variables for toggleSpeechBubble function
 
-const portfolioSection = document.getElementById('portfolio');
-const aboutSection = document.getElementById('about');
-const contactSection = document.getElementById('contact');
-
-let portfolioIsVisible = false;
-let aboutIsVisible = false;
-let contactIsVisible = false;
+const speechBubble = document.getElementById('speechBubble');
+let speechBubbleIsVisible = false;
 
 
-// toggle visibility functions
+// create  toggleSpeechBubble function
 
-const pToggle = () => {
-    if (portfolioIsVisible === true) {
-        portfolioSection.style.visibility = 'hidden';
-        portfolioIsVisible = false;
+function toggleSpeechBubble() {
+    if (speechBubbleIsVisible) {
+        speechBubble.style.display = 'none';
+        speechBubbleIsVisible = false;
     } else {
-        portfolioSection.style.visibility = 'visible';
-        portfolioIsVisible = true;
-    };
-};
+        speechBubble.style.display = 'block';
+        speechBubbleIsVisible = true;
+    }
+}
 
-const aToggle = () => {
-    if(aboutIsVisible === true) {
-        aboutSection.style.visibility = 'hidden';
-        aboutIsVisible = false;
+// declaring variables for toggleProfileInfo function
+
+const profileInfo = document.getElementById('profile-info');
+let profileInfoIsVisible = false;
+
+// create toggleProfileInfo function
+
+function toggleProfileInfo() {
+    if (profileInfoIsVisible) {
+        profileInfo.style.display = 'none';
+        profileInfoIsVisible = false;
     } else {
-        aboutSection.style.visibility = 'visible';
-        aboutIsVisible = true;
-    };
-};
-
-const cToggle = () => {
-    if(contactIsVisible === true) {
-        contactSection.style.visibility = 'hidden';
-        contactIsVisible = false;
-    } else {
-        contactSection.style.visibility = 'visible';
-        contactIsVisible = true;
-    };
-};
+        profileInfo.style.display = 'block';
+        profileInfoIsVisible = true;
+    }
+}
 
 
-// rainbow color change for the h1
+// declare variables for nameFlasher function
 
-let pageTitle = document.getElementById('pageTitle')
+const g = document.getElementById('g');
+const gDash = document.getElementById('g-');
+const gDashM = document.getElementById('g-m');
+const gDashMa = document.getElementById('g-ma');
+const gDashMac = document.getElementById('g-mac');
+const gDashMach = document.getElementById('g-mach');
 
-const rainbow = () => {
-    pageTitle.classList.add('animation-rainbow');
-    setTimeout(() => {
-        pageTitle.classList.remove('animation-rainbow');
-    }, 1500);
-};
+// create functions that add the item-flasher class to each of the letters =========
 
-// crumble the headline in 3 sections
+const gFlash = () => {
+    g.classList.add('item-flasher');
+}
+const gDashFlash = () => {
+    gDash.classList.add('item-flasher');
+}
+const gDashMFlash = () => {
+    gDashM.classList.add('item-flasher');
+}
+const gDashMaFlash = () => {
+    gDashMa.classList.add('item-flasher');
+}
+const gDashMacFlash = () => {
+    gDashMac.classList.add('item-flasher');
+}
+const gDashMachFlash = () => {
+    gDashMach.classList.add('item-flasher');
+}
+const removeClasses = () => {
+    g.classList.remove('item-flasher');
+    gDash.classList.remove('item-flasher');
+    gDashM.classList.remove('item-flasher');
+    gDashMa.classList.remove('item-flasher');
+    gDashMac.classList.remove('item-flasher');
+    gDashMach.classList.remove('item-flasher');
+}
 
-const crumble1 = document.getElementById('crumble1');
-const crumble2 = document.getElementById('crumble2');
-const crumble3 = document.getElementById('crumble3');
+// create nameFlasher function
 
-const redWhiteBlue = () => {
-    setTimeout(() => {
-        crumble1.classList.add('animation-redWhiteBlue');
-    }, 100)
+function nameFlasher() {
+    gFlash();
+    gDashFlash();
+    gDashMFlash();
+    gDashMaFlash();
+    gDashMacFlash();
+    gDashMachFlash();
+ 
+    setTimeout(removeClasses, 1500);
 
-    setTimeout(() => {
-        crumble2.classList.add('animation-redWhiteBlue');
-    }, 1500);
+}
+/* Blowup functions ========================================
+ toggleClubSize */
 
-    
-    setTimeout(() => {
-        crumble3.classList.add('animation-redWhiteBlue');
-    }, 3000);
+const clubCollage = document.getElementById('club-collage');
+const clubBlowup = document.getElementById('club-blowup');
+let clubCollageIsVisible = true;
+let clubBlowupIsVisible = false;
 
-    setTimeout(() => {
-        crumble1.classList.remove('animation-redWhiteBlue');
-        crumble2.classList.remove('animation-redWhiteBlue');
-        crumble3.classList.remove('animation-redWhiteBlue');
-    }, 4500);
+clubBlowup.addEventListener('click', () => {
+    toggleClubSize();
+})
 
+clubCollage.addEventListener('click', () => {
+    toggleClubSize();
+});
+
+function toggleClubSize() {
+    if (clubCollageIsVisible) {
+        clubBlowup.style.display = 'flex';
+        clubBlowupIsVisible = true;
+        clubCollage.style.display = 'none';
+        clubCollageIsVisible = false;
+    } else if (clubBlowupIsVisible) {
+        clubBlowup.style.display = 'none';
+        clubBlowupIsVisible = false;
+        clubCollage.style.display = 'flex';
+        clubCollageIsVisible = true;
+    }
+}
+
+//  toggleCompanySize
+
+const companyCollage = document.getElementById('company-collage');
+const companyBlowup = document.getElementById('company-blowup');
+let companyCollageIsVisible = true;
+let companyBlowupIsVisible = false;
+
+companyBlowup.addEventListener('click', () => {
+    toggleCompanySize();
+})
+
+companyCollage.addEventListener('click', () => {
+    toggleCompanySize();
+});
+
+function toggleCompanySize() {
+    if (companyCollageIsVisible) {
+        companyBlowup.style.display = 'flex';
+        companyBlowupIsVisible = true;
+        companyCollage.style.display = 'none';
+        companyCollageIsVisible = false;
+    } else if (companyBlowupIsVisible) {
+        companyBlowup.style.display = 'none';
+        companyBlowupIsVisible = false;
+        companyCollage.style.display = 'flex';
+        companyCollageIsVisible = true;
+    }
+}
+
+//  toggleColmarSize
+
+const colmarCollage = document.getElementById('colmar-collage');
+const colmarBlowup = document.getElementById('colmar-blowup');
+let colmarCollageIsVisible = true;
+let colmarBlowupIsVisible = false;
+
+colmarBlowup.addEventListener('click', () => {
+    toggleColmarSize();
+})
+
+colmarCollage.addEventListener('click', () => {
+    toggleColmarSize();
+});
+
+function toggleColmarSize() {
+    if (colmarCollageIsVisible) {
+        colmarBlowup.style.display = 'flex';
+        colmarBlowupIsVisible = true;
+        colmarCollage.style.display = 'none';
+        colmarCollageIsVisible = false;
+    } else if (colmarBlowupIsVisible) {
+        colmarBlowup.style.display = 'none';
+        colmarBlowupIsVisible = false;
+        colmarCollage.style.display = 'flex';
+        colmarCollageIsVisible = true;
+    }
+}
+
+//  toggleFotomaticSize
+
+const fotomaticCollage = document.getElementById('fotomatic-collage');
+const fotomaticBlowup = document.getElementById('fotomatic-blowup');
+let fotomaticCollageIsVisible = true;
+let fotomaticBlowupIsVisible = false;
+
+fotomaticBlowup.addEventListener('click', () => {
+    togglefotomaticSize();
+})
+
+fotomaticCollage.addEventListener('click', () => {
+    togglefotomaticSize();
+});
+
+function togglefotomaticSize() {
+    if (fotomaticCollageIsVisible) {
+        fotomaticBlowup.style.display = 'flex';
+        fotomaticBlowupIsVisible = true;
+        fotomaticCollage.style.display = 'none';
+        fotomaticCollageIsVisible = false;
+    } else if (fotomaticBlowupIsVisible) {
+        fotomaticBlowup.style.display = 'none';
+        fotomaticBlowupIsVisible = false;
+        fotomaticCollage.style.display = 'flex';
+        fotomaticCollageIsVisible = true;
+    }
 }
