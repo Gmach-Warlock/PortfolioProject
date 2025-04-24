@@ -215,6 +215,35 @@ function togglefotomaticSize() {
     }
 }
 
+//  toggleMessageSize
+
+const messageCollage = document.getElementById('message-collage');
+const messageBlowup = document.getElementById('message-blowup');
+let messageCollageIsVisible = true;
+let messageBlowupIsVisible = false;
+
+messageBlowup.addEventListener('click', () => {
+    toggleMessageSize();
+})
+
+messageCollage.addEventListener('click', () => {
+    toggleMessageSize();
+});
+
+function toggleMessageSize() {
+    if (messageCollageIsVisible) {
+        messageBlowup.style.display = 'flex';
+        messageBlowupIsVisible = true;
+        messageCollage.style.display = 'none';
+        messageCollageIsVisible = false;
+    } else if (messageBlowupIsVisible) {
+        messageBlowup.style.display = 'none';
+        messageBlowupIsVisible = false;
+        messageCollage.style.display = 'flex';
+        messageCollageIsVisible = true;
+    }
+}
+
 /* create scroll animations for about sections =====================
 declare variables */
 
