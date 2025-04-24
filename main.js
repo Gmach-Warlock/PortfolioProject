@@ -47,30 +47,30 @@ const gDashMach = document.getElementById('g-mach');
 // create functions that add the item-flasher class to each of the letters =========
 
 const gFlash = () => {
-    g.classList.add('item-flasher');
+    g.classList.add('animation-item-flasher');
 }
 const gDashFlash = () => {
-    gDash.classList.add('item-flasher');
+    gDash.classList.add('animation-item-flasher');
 }
 const gDashMFlash = () => {
-    gDashM.classList.add('item-flasher');
+    gDashM.classList.add('animation-item-flasher');
 }
 const gDashMaFlash = () => {
-    gDashMa.classList.add('item-flasher');
+    gDashMa.classList.add('animation-item-flasher');
 }
 const gDashMacFlash = () => {
-    gDashMac.classList.add('item-flasher');
+    gDashMac.classList.add('animation-item-flasher');
 }
 const gDashMachFlash = () => {
-    gDashMach.classList.add('item-flasher');
+    gDashMach.classList.add('animation-item-flasher');
 }
 const removeClasses = () => {
-    g.classList.remove('item-flasher');
-    gDash.classList.remove('item-flasher');
-    gDashM.classList.remove('item-flasher');
-    gDashMa.classList.remove('item-flasher');
-    gDashMac.classList.remove('item-flasher');
-    gDashMach.classList.remove('item-flasher');
+    g.classList.remove('animation-item-flasher');
+    gDash.classList.remove('animation-item-flasher');
+    gDashM.classList.remove('animation-item-flasher');
+    gDashMa.classList.remove('animation-item-flasher');
+    gDashMac.classList.remove('animation-item-flasher');
+    gDashMach.classList.remove('animation-item-flasher');
 }
 
 // create nameFlasher function
@@ -190,15 +190,50 @@ fotomaticCollage.addEventListener('click', () => {
 });
 
 function togglefotomaticSize() {
-    if (fotomaticCollageIsVisible) {
+    const screenWidth = window.innerWidth;
+
+    if (fotomaticCollageIsVisible && screenWidth > 600) {
         fotomaticBlowup.style.display = 'flex';
         fotomaticBlowupIsVisible = true;
         fotomaticCollage.style.display = 'none';
         fotomaticCollageIsVisible = false;
-    } else if (fotomaticBlowupIsVisible) {
+    } else if (fotomaticBlowupIsVisible && screenWidth > 600) {
         fotomaticBlowup.style.display = 'none';
         fotomaticBlowupIsVisible = false;
         fotomaticCollage.style.display = 'flex';
         fotomaticCollageIsVisible = true;
+    } else if (fotomaticCollageIsVisible && screenWidth < 600) {
+        fotomaticBlowup.style.display = 'block';
+        fotomaticBlowupIsVisible = true;
+        fotomaticCollage.style.display = 'none';
+        fotomaticCollageIsVisible = false;
+    } else if (fotomaticBlowupIsVisible && screenWidth < 600) {
+        fotomaticBlowup.style.display = 'none';
+        fotomaticBlowupIsVisible = false;
+        fotomaticCollage.style.display = 'block';
+        fotomaticCollageIsVisible = true;
     }
 }
+
+/* create scroll animations for about sections =====================
+declare variables */
+
+const bioHead = document.getElementById('bio-head');
+const bioBody = document.getElementById('bio-body');
+
+bioHead.addEventListener('wheel', () => {
+    bioHead.classList.add('animation-floatLeft');
+    setTimeout(() => {
+        bioHead.classList.remove('animation-floatLeft');
+    }, 1000);
+});
+
+
+
+bioBody.addEventListener('wheel', () => {
+    bioBody.classList.add('animation-floatRight');
+    setTimeout(() => {
+        bioBody.classList.remove('animation-floatRight');
+    }, 1000);
+});
+
